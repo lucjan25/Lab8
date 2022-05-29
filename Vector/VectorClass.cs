@@ -44,7 +44,7 @@ namespace Vector
         public double GetAngle()
         {
             double[] comps = this.GetComponents();
-            return Math.Atan(comps[1] / comps[0]);
+            return Math.Atan(comps[1] / comps[0]) * (180 / Math.PI);
         }
     }
     public interface IPolar2D
@@ -76,7 +76,7 @@ namespace Vector
         public double GetAngle()
         {
             double[] comps = this.GetComponents();
-            return Math.Atan(comps[1] / comps[0]);
+            return Math.Atan(comps[1] / comps[0]) * (180 / Math.PI);
         }
     }
     public class Vector3DInheritance : Vector2D
